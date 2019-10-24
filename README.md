@@ -15,4 +15,6 @@ Fitur-fitur pada Aplikasi :
 
 ### Download in playstore
 
-<a href="https://play.google.com/store/apps/details?id=com.ronirusmayadi.sahabatqu"><img src="https://user-images.githubusercontent.com/24602873/67461579-dd842480-f667-11e9-9a31-1e3502ce0e60.png" width="360"></a>
+Kini telah hadir di platform playstore rekan-rekan dapat mengunduh nya 
+<br><a href="https://play.google.com/store/apps/details?id=com.ronirusmayadi.sahabatqu"><img src="https://user-images.githubusercontent.com/24602873/67461579-dd842480-f667-11e9-9a31-1e3502ce0e60.png" width="160"></a> 
+<a href="https://www.facebook.com/sahabat.azzikra/"><img src="https://user-images.githubusercontent.com/24602873/67462414-af9fdf80-f669-11e9-8b3d-0dfb2a829138.png" width="60"></a> <a href="https://www.instagram.com/sahabat.azzikra/?hl=en"><img src="https://user-images.githubusercontent.com/24602873/67462361-972fc500-f669-11e9-8fd7-f82f14a94b44.png" width="60"></a>
