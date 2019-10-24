@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logoazzikra" />
+
+        <TextView
+            android:id="@+id/bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:gravity="center"
+            android:text="@string/bio"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/hub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bio"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Hubungi Kami di :"
+            android:textColor="@color/colorPrimary" />
+
+        <RelativeLayout
+            android:id="@+id/sosial"
+            android:layout_below="@+id/hub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fb"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/facebook" />
+
+                <ImageView
+                    android:id="@+id/ig"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/instagram" />
+
+                <ImageView
+                    android:id="@+id/wa"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/wa" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

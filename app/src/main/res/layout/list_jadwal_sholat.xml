@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layou1"
+            android:padding="12dp"
+            android:background="#D5D5D5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/date"
+                android:text="20-10-2019"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/lokasi"
+                android:layout_marginTop="3dp"
+                android:text="Untuk Daerah Purwakarta"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/layou1"
+            android:id="@+id/layou2"
+            android:padding="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Subuh"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:layout_width="fill_parent"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/subuh"
+                android:text="Waktu"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"
+                android:gravity="right"
+                android:layout_weight="2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_below="@+id/layou2"
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/border"/>
+
+        <LinearLayout
+            android:layout_below="@id/view1"
+            android:id="@+id/layou3"
+            android:padding="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Shurooq"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:layout_width="fill_parent"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/shurooq"
+                android:text="Waktu"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"
+                android:gravity="right"
+                android:layout_weight="2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_below="@+id/layou3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/border"/>
+
+        <LinearLayout
+            android:layout_below="@+id/view2"
+            android:id="@+id/layou4"
+            android:padding="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Dzuhur"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:layout_width="fill_parent"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/dzuhur"
+                android:text="Waktu"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"
+                android:gravity="right"
+                android:layout_weight="2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_below="@+id/layou4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/border"/>
+
+        <LinearLayout
+            android:padding="25dp"
+            android:id="@+id/layou5"
+            android:layout_below="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Ashar"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:layout_width="fill_parent"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/ashar"
+                android:text="Waktu"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"
+                android:gravity="right"
+                android:layout_weight="2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_below="@+id/layou5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/border"/>
+
+        <LinearLayout
+            android:padding="25dp"
+            android:id="@+id/layou6"
+            android:layout_below="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Maghrib"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:layout_width="fill_parent"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/maghrib"
+                android:text="Waktu"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"
+                android:gravity="right"
+                android:layout_weight="2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_below="@+id/layou6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/border"/>
+        <LinearLayout
+            android:id="@+id/layout7"
+            android:layout_below="@id/view5"
+            android:padding="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Isya"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"
+                android:gravity="left"
+                android:layout_width="fill_parent"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/isya"
+                android:text="Waktu"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"
+                android:gravity="right"
+                android:layout_weight="2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_below="@+id/layout7"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/border"/>
+
+    </RelativeLayout>
+
+</ScrollView>

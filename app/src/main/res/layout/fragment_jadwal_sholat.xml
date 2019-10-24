@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.JadwalSholatFragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="6dp">
+
+                <ViewFlipper
+                    android:id="@+id/sunset"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop" />
+            </android.support.v7.widget.CardView>
+
+            <AnalogClock
+                android:id="@+id/textClock1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="12dp" />
+
+            <LinearLayout
+                android:id="@+id/layou1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scroll"
+                android:background="#E7E6E6"
+                android:foreground="?attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Purwakarta"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layou1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layou2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layou1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:padding="25dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/snowing" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="Subuh"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/subuh"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="00:00"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/layou2"
+                    android:background="@drawable/border" />
+
+                <LinearLayout
+                    android:id="@+id/layou3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:padding="25dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/shuruq" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="Shurooq"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/shurooq"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="00:00"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/layou3"
+                    android:background="@drawable/border" />
+
+                <LinearLayout
+                    android:id="@+id/layou4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view2"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:padding="25dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/sun" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="Dzuhur"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/dzuhur"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="00:00"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/layou4"
+                    android:background="@drawable/border" />
+
+                <LinearLayout
+                    android:id="@+id/layou5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view3"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:padding="25dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/cloudy" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="Ashar"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/ashar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="00:00"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/layou5"
+                    android:background="@drawable/border" />
+
+                <LinearLayout
+                    android:id="@+id/layou6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view4"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:padding="25dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/magrib" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="Maghrib"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/maghrib"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="00:00"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/layou6"
+                    android:background="@drawable/border" />
+
+                <LinearLayout
+                    android:id="@+id/layout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view5"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:padding="25dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/night" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="Isya"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/isya"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="00:00"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/layout7"
+                    android:background="@drawable/border" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

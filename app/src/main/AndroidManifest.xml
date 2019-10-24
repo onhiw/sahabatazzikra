@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ronirusmayadi.sahabatqu">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".LupaPassword"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".AmalanActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".AlquranActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".JadwalSholatActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".SettingActivity" />
+
+        <receiver
+            android:name=".Alarm.AlarmReceiverAdzan"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".InfoProgramActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InfoSaldoActivity" />
+        </activity>
+        <activity android:name=".DetailHistoryTransaksi">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InfoSaldoActivity" />
+        </activity>
+        <activity android:name=".TransferActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InfoSaldoActivity" />
+        </activity>
+        <activity android:name=".TopUpActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InfoSaldoActivity" />
+        </activity>
+        <activity android:name=".EditProfilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InfoSaldoActivity" />
+        </activity>
+        <activity
+            android:name=".InfoSaldoActivity"
+            android:theme="@style/AppTheme." />
+        <activity
+            android:name=".DaftarActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DetailGalleryActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".DetailArtikelActivity" />
+
+        <receiver
+            android:name=".Notification.MyAlarm"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".Broadcast.AlarmDhuha"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".DetailSejarahActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ArtikelActivity" />
+        </activity>
+        <activity android:name=".DetailTeknologiActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ArtikelActivity" />
+        </activity>
+        <activity android:name=".DetailDoaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoaActivity" />
+        </activity>
+        <activity
+            android:name=".ArtikelActivity"
+            android:theme="@style/AppTheme.">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".DoaActivity"></activity>
+        <activity android:name=".AsmaulActivity"></activity>
+        <activity
+            android:name=".PlayQuranActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity android:name=".WebViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".WebActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ViewGambar"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".GalleryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme." />
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
