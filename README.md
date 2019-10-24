@@ -10,7 +10,8 @@ Fitur-fitur pada Aplikasi :
 6. Top up Saldo Sedekah
 
 ## Screenshot
-![home](https://user-images.githubusercontent.com/24602873/67459426-c858c700-f662-11e9-870f-617e5363c00b.png)
+<img src="https://user-images.githubusercontent.com/24602873/67459426-c858c700-f662-11e9-870f-617e5363c00b.png" width="360"> | <img src="https://user-images.githubusercontent.com/24602873/67460925-6f8b2d80-f666-11e9-9511-9348eba5ffa6.png" width="360"> | <img src="https://user-images.githubusercontent.com/24602873/67461040-9d707200-f666-11e9-824a-b48fbba22f01.png" width="360">
+------------ | ------------- | -------------
 
 ### Download in playstore
 https://play.google.com/store/apps/details?id=com.ronirusmayadi.sahabatqu
